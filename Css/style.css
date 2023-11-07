@@ -1,0 +1,281 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+/*Responsive*/
+
+
+
+
+
+
+/* Estilos para pantallas más pequeñas (tabletas) */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 24px;
+      padding: 50%;   
+  }
+
+  nav ul {
+      text-align: center;
+      padding-top: 20px;
+  }
+
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+}
+
+/* Estilos para pantallas aún más pequeñas (móviles) */
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 20px;
+  }
+
+  nav ul li {
+      margin: 8px 0;
+  }
+
+  .carousel-inner img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .history-text {
+      font-size: 14px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+  z-index: 100;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+  position: sticky;
+}
+
+.header .logo {
+  cursor: pointer;
+}
+.header .logo img{
+  height: 70px;
+  width: auto;
+}
+.header .logo img:hover{
+  transform: scale(1.2);
+}
+.header .nav-links{
+  list-style: none;
+}
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+
+}
+.header .nav-links a{
+  font-size: 700;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  position: relative;
+}
+ .link::after{
+  color: black;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background: cyan;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+.link:hover::after{
+  opacity: 1;
+}
+
+.buton{
+  color: rgb(1, 151, 144);
+  background-color: black;
+  border-radius: 13px;
+  padding: 10px;
+  margin: 3,3px;
+}
+.buton:hover{
+  color: white;
+}
+
+.text-downslide h1{
+  padding: 20px 20px;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Croissant One', cursive;
+  font-family: 'Libre Baskerville', serif;
+}
+.history-text{
+  padding: 40px;
+  font-size: 20px;
+  font-family: 'Croissant One', cursive; 
+}
+
+.text-downslide img{
+  height: 250px;
+  width: 20%;
+  position: relative;
+  left: 41%;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  max-width: 100%;
+}
+
+/*Second layout style*/
+.fila{ 
+  display:flex;
+  flex-wrap: wrap; /*Para la distribucion del contenido en fila*/ 
+} 
+
+.columna1{
+  flex: 60%;
+  background-color: aqua;
+  padding: 20px;
+ }
+
+.columna2{ 
+  flex: 40%; 
+  background-color: silver;
+  padding: 30px;
+
+  
+   }
+
+   
+.imagenes{
+  width: 100%; 
+  padding: 20px; 
+  background-color: rgb(255, 255, 255); 
+  border: 1px solid rgb(255, 255, 255);
+  max-width: 100%;
+     } 
+
+.imagenesCar{
+  width: 90%; 
+  padding: 10px; 
+  background-color: rgb(2, 4, 32); 
+  border: 20px solid rgb(255, 255, 255);
+  max-width: 100%;
+     
+}
+
+.bordeVideo{
+    width: 80%; 
+    padding: 20px; 
+    background-color: rgb(0, 0, 0); 
+    border: 9px solid rgb(255, 255, 255);
+}
+
+#text-Video{
+  font-size: 30px;
+  font-family: 'Croissant One', cursive; 
+  color: #000;
+  font-size-adjust: initial;
+  text-align: justify;
+}
+
+
+footer{
+  max-width: 100%;
+  width: 100%;
+  padding: 5px;
+  background-image: url(/img/paisajes-4k/background-footer.jpg);
+  background-size: cover;
+}
+
+.container_footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+}
+.box_footer{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+.box_footer .logo img{
+  width: 190px;
+  max-width: 100%;
+
+}
+
+.box_footer .terms{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #7a7a7a;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.box_footer h2{
+  margin-bottom: 30px;
+  color: #24303c; 
+  font-weight: 700; 
+}
+
+.box_footer p{
+  color: #433d3d91;
+  font-weight: 600;
+}
+
+.box_footer a{
+  text-decoration: none;
+  color: aqua;
+}
+
+.box_footer a:hover{
+  color: rgb(169, 255, 226);
+  text-decoration: none;
+
+}
+
+.box_derechos{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
+
+
+
+
+
+

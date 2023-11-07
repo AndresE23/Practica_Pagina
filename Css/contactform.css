@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header{
+    z-index: 100;
+    top: 0;
+    background-color: #24303c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10px;
+    position: sticky;
+  }
+  
+  .header .logo {
+    cursor: pointer;
+  }
+  .header .logo img{
+    height: 70px;
+    width: auto;
+  }
+  .header .logo img:hover{
+    transform: scale(1.2);
+  }
+  .header .nav-links{
+    list-style: none;
+  }
+  
+  .header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+  
+  }
+  .header .nav-links a{
+    font-size: 700;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    position: relative;
+  }
+   .link::after{
+    color: black;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: cyan;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+  .link:hover::after{
+    opacity: 1;
+  }
+  
+  .buton{
+    color: rgb(1, 151, 144);
+    background-color: black;
+    border-radius: 13px;
+    padding: 10px;
+    margin: 3,3px;
+  }
+  .buton:hover{
+    color: white;
+  }
+  
+  /**Form is down here**/
+ .background{
+    background-image: url(/img/autos/imagenform-1.png);
+    background-size: cover;
+    height: 700px;
+ }
+
+  .form-register{
+    width: 300px;
+    background: #24303c;
+    padding: 45px;
+    margin: auto;
+    margin-top: 0%;
+    position: relative;
+    display: flexbox;
+    top: 120px;
+    border-radius: 20px;
+    font-family: 'Croissant One', cursive;
+    color: white;
+    box-shadow: 7px 13px 37px rgb(155, 252, 252);
+  }
+.form-register h1{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+.controls{
+    width:100%;
+    background: #24303c;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    border: 1px solid cyan;
+    font-family: 'Croissant One', cursive;
+    color: white;
+    font-size: 18px;
+}
+.form-register .terms{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 15px;
+    display: contents;
+    line-height: 15px;
+}
+.form-register a:hover{
+    color: cyan;
+}
+.form-register .Submit-form{
+    width:105%;
+    background-color: white;
+    color: #24303c;
+    border-radius: 5px;
+    border: 1px solid #24303c;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+}
+.form-register .Submit-form:hover{
+    transform: scale(1.1);
+    color: aliceblue;
+    background-color: #24303c;
+    border: 1px solid wheat;
+}
+footer{
+  width: 100%;
+  padding: 5px;
+  background-image: url(/img/paisajes-4k/background-footer.jpg);
+  background-size: cover;
+}
+
+.container_footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+}
+.box_footer{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.box_footer .logo img{
+  width: 190px;
+}
+
+.box_footer .terms{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #7a7a7a;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.box_footer h2{
+  margin-bottom: 30px;
+  color: #24303c; 
+  font-weight: 700; 
+}
+
+.box_footer a{
+  text-decoration: none;
+  color: #433d3d91;
+  font-weight: 600;
+}
+
+.box_footer a:hover{
+  color: aquamarine;
+}
+
+.box_derechos{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 40px;
+}
+
+
+
+
+
